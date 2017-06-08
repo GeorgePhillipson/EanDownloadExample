@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<BCPFORMAT xmlns="http://schemas.microsoft.com/sqlserver/2004/bulkload/format" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <RECORD>
+  <FIELD ID="01" xsi:type="CharTerm" TERMINATOR="|" MAX_LENGTH="12" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="02" xsi:type="CharTerm" TERMINATOR="|" MAX_LENGTH="70" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="03" xsi:type="CharTerm" TERMINATOR="|" MAX_LENGTH="150" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="04" xsi:type="CharTerm" TERMINATOR="|" MAX_LENGTH="12" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="05" xsi:type="CharTerm" TERMINATOR="|" MAX_LENGTH="12" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="06" xsi:type="CharTerm" TERMINATOR="|" MAX_LENGTH="12" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="07" xsi:type="CharTerm" TERMINATOR="|" MAX_LENGTH="300" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="08" xsi:type="CharTerm" TERMINATOR="\n" MAX_LENGTH="12" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+ </RECORD>
+ <ROW>
+  <COLUMN SOURCE="01" NAME="EANHotelID" 		xsi:type="SQLINT" NULLABLE="YES"/>
+  <COLUMN SOURCE="02" NAME="Caption" 	xsi:type="SQLNVARCHAR" NULLABLE="YES"/>
+  <COLUMN SOURCE="03" NAME="URL" 				xsi:type="SQLNVARCHAR" NULLABLE="YES"/>
+  <COLUMN SOURCE="04" NAME="Width" 			xsi:type="SQLINT" NULLABLE="YES"/>
+  <COLUMN SOURCE="05" NAME="Height" 			xsi:type="SQLINT" NULLABLE="YES"/>
+  <COLUMN SOURCE="06" NAME="ByteSize" 				xsi:type="SQLINT" NULLABLE="YES"/>
+  <COLUMN SOURCE="07" NAME="ThumbnailURL" 		xsi:type="SQLNVARCHAR" NULLABLE="YES"/>
+  <COLUMN SOURCE="08" NAME="DefaultImage" 		xsi:type="SQLINT" NULLABLE="YES"/>
+  </ROW>
+</BCPFORMAT>

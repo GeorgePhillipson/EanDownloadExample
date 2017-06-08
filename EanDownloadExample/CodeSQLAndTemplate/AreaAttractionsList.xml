@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<BCPFORMAT xmlns="http://schemas.microsoft.com/sqlserver/2004/bulkload/format" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <RECORD>
+  
+  <FIELD ID="01" xsi:type="CharTerm" TERMINATOR="|" MAX_LENGTH="12" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="02" xsi:type="CharTerm" TERMINATOR="|" MAX_LENGTH="5" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="03" xsi:type="CharTerm" TERMINATOR="\n" MAX_LENGTH="4000" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+ </RECORD>
+ <ROW>
+  <COLUMN SOURCE="01" NAME="EANHotelID" 		xsi:type="SQLINT" NULLABLE="YES"/>
+  <COLUMN SOURCE="02" NAME="LanguageCode" 	xsi:type="SQLNVARCHAR" NULLABLE="YES"/>
+  <COLUMN SOURCE="03" NAME="AreaAttractions" 				xsi:type="SQLNVARCHAR" NULLABLE="YES"/>
+  </ROW>
+</BCPFORMAT>
